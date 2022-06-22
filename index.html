@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <link rel="stylesheet" href="src/style.css">
+   <script src="https://kit.fontawesome.com/7adfc7f89e.js" crossorigin="anonymous"></script>
+   <!-- <link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" /> -->
+   <title>Weather</title>
+</head>
+
+<body>
+   <div class="weather__wrapper">
+      <div class="weather__container">
+         <div class="current">
+            <div class="current__row">
+               <div class="current__column column__1">
+                  <div class="current__item">
+                     <div class="item__city" id="city">Kyiv, UA</div>
+                     <div class="item__time" id="current-time"></div>
+                     <div class="item__date" id="current-date"></div>
+                  </div>
+               </div>
+               <div class="current__column column__2">
+
+                  <form class="search-form" id="search-form">
+                     <input type="search" class="search-place" placeholder="Check weather in..." id="city-input">
+                     <button type="submit" class="submit">
+                        <i class="fa fa-search"></i>
+                     </button>
+                  </form>
+
+
+               </div>
+            </div>
+         </div>
+         <div class="details">
+            <!-- <div class="temprt" id="temperature">15uhfl</div> -->
+            <div class="weather-description" id="description"></div>
+            <div class="humidity">Humidity: <span id="humidity"></span> %</div>
+            <div class="wind">Wind: <span id="wind"></span> km/h</div>
+            <div class="pressure">Pressure: <span id="pressure"></span> mm</div>
+         </div>
+         <div class="forecast" id="forecast">
+            <div class="forecast__row">
+               <div class="forecast__column">
+                  <div class="forecast__day">Wed</div>
+                  <div class="forecast__icon">
+                     <img class="icon" src="../WeatherCite/img/icons/01d.svg" id="icon" alt="forecast__icon">
+                  </div>
+                  <div class="forecast__temperatures">
+                     <span class="forecast__temperature-max">
+
+                     </span>
+                     <span class="forecast__temperature-min">
+
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+<script src="src/app.js"></script>
+
+</html>
