@@ -180,6 +180,10 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.forecast__column:first-child {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(17, 17, 17);
+}
 .forecast__day {
   font-size: 18px;
   font-weight: 600;

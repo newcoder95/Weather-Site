@@ -121,8 +121,9 @@ body {
    border-radius: 0 2px 2px 0;
    cursor: pointer;
    font-size: 12px;
-     transition: all ease 0.3s;
-   &:hover{
+   transition: all ease 0.3s;
+
+   &:hover {
       background: #162b2b;
    }
 }
@@ -137,16 +138,19 @@ body {
 
    div {
       margin: 0 auto;
-     &:not(:first-child){
-       font-size: 14px;
-     }
+
+      &:not(:first-child) {
+         font-size: 14px;
+      }
    }
 }
-.weather-description{
-    font-size: 22px;
-      font-weight: 600;
-      text-transform: capitalize;
+
+.weather-description {
+   font-size: 22px;
+   font-weight: 600;
+   text-transform: capitalize;
 }
+
 .humidity {}
 
 .wind {}
@@ -170,11 +174,17 @@ body {
       padding: 10px;
       border-radius: 5px;
       transition: all ease 0.3s;
-      &:hover{
-           background-color: rgba(0, 0, 0, .6);
-           transform: scale(1.1);
+
+      &:hover {
+         background-color: rgba(0, 0, 0, .6);
+         transform: scale(1.1);
       }
-    
+
+      &:first-child {
+         background-color: rgba(0, 0, 0, .5);
+        border: 2px solid rgb(17, 17, 17);
+      }
+
    }
 
    &__day {
