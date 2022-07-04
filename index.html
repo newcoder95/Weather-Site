@@ -19,6 +19,7 @@
 <body>
    <div class="weather__wrapper">
       <div class="weather__container">
+
          <div class="current">
             <div class="current__row">
                <div class="current__column column__1">
@@ -31,18 +32,16 @@
                <div class="current__column column__2">
 
                   <form class="search-form" id="search-form">
-                     <input type="search" class="search-place" placeholder="Check weather in..." id="city-input">
+                     <input type="search" class="search-place" placeholder="City, country..." id="city-input">
                      <button type="submit" class="submit">
                         <i class="fa fa-search"></i>
                      </button>
                   </form>
-
-
                </div>
             </div>
          </div>
          <div class="details">
-            <!-- <div class="temprt" id="temperature">15uhfl</div> -->
+            <div class="temprt"><span id="temperature"></span>°C</div>
             <div class="weather-description" id="description"></div>
             <div class="humidity">Humidity: <span id="humidity"></span> %</div>
             <div class="wind">Wind: <span id="wind"></span> km/h</div>
@@ -53,7 +52,7 @@
                <div class="forecast__column">
                   <div class="forecast__day">Wed</div>
                   <div class="forecast__icon">
-                     <img class="icon" src="../WeatherCite/img/icons/01d.svg" id="icon" alt="forecast__icon">
+                     <img class="icon" src="img/icons/01d.svg" id="icon" alt="forecast__icon">
                   </div>
                   <div class="forecast__temperatures">
                      <span class="forecast__temperature-max">
@@ -66,6 +65,7 @@
                </div>
             </div>
          </div>
+
       </div>
    </div>
 
